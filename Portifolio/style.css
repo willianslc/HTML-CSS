@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {/*Reset CSS*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /*100% da altura da viewport que no caso é nossa pagina*/
+    box-sizing: border-box;
+    background-color: black;
+    color: #F6F6F6;
+}
+
+.destaque {
+    color: #5eeb5b;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;/*coloca os elementos da página lado a lado*/
+    align-items: center;/*alinha os elementos com base na imagem nesse caso*/
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__paragrafo {
+    font-size: 20px;
+    margin: 40px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 0;
+}
+
+.estilo_botao {
+    background-color: #5eeb5b;
+    color: black;
+    width: 280px;
+    border-radius: 16px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none; 
+}
+
+.img {
+    border-radius: 16px;
+}
