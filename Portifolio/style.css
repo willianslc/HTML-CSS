@@ -13,7 +13,22 @@ body {
 }
 
 .destaque {
-    color: #5eeb5b;
+    color: #01A34D;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 67px 15%;
+    gap: 80px;
+}
+
+.link-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #F6F6F6;
 }
 
 .apresentacao {
@@ -42,23 +57,40 @@ body {
     font-weight: 400;
 }
 
+.sub-titulo {
+    font-size: 24px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+}
+
 .botoes {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    padding: 51px 0;
+    gap: 32px;
+    /*padding: 51px 0;*/
 }
 
 .estilo_botao {
-    background-color: #5eeb5b;
-    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #01A34D;
+    color: #F6F6F6;
     width: 280px;
-    border-radius: 16px;
+    border-radius: 8px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 24px;
     padding: 21.5px 0;
-    text-decoration: none; 
+    text-decoration: none;
+}
+
+.estilo_botao:hover {
+    background-color: #272727;
+    color: #F6F6F6;
 }
 
 .img {
