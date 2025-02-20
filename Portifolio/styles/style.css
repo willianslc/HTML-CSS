@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terceiaria: #01A34D;
+    --cor-quaternaria: #0CE873;
+    --cor-quintaria: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * {/*Reset CSS*/
     margin: 0;
     padding: 0;
@@ -8,8 +19,8 @@
 body {
     /*height: 100vh; 100% da altura da viewport que no caso é nossa pagina*/
     box-sizing: border-box;
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .menu {
@@ -22,11 +33,11 @@ body {
 }
 
 .link-menu {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: #0CE873;
+    color: var(--cor-quaternaria)
 }
 
 .apresentacao {
@@ -45,23 +56,23 @@ body {
 
 .apresentacao__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .destaque {
-    color: #01A34D;
+    color: var(--cor-terceiaria);
 }
 
 .apresentacao__paragrafo {
     font-size: 20px;
     margin: 40px 0 0 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 400;
 }
 
 .sub-titulo {
     font-size: 24px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
 }
 
@@ -78,12 +89,12 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #01A34D;
-    color: #F6F6F6;
+    border: 2px solid var(--cor-terceiaria);
+    color: var(--cor-secundaria);
     width: 280px;
     border-radius: 8px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 24px;
     padding: 21.5px 0;
@@ -91,8 +102,8 @@ body {
 }
 
 .estilo_botao:hover {
-    background-color: #272727;
-    color: #F6F6F6;
+    background-color: var(--cor-quintaria);
+    color: var(--cor-secundaria);
 }
 
 .img {
@@ -100,11 +111,11 @@ body {
 }
 
 .rodape {
-    color: #F6F6F6;
-    background-color: #272727;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-quintaria);
     padding: 24px;
     text-align: center;
-    font-family: 'montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 16px;
     font-weight: 400;
 }
