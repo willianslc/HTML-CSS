@@ -34,7 +34,7 @@ body {
 
 .link-menu {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-quaternaria)
@@ -45,17 +45,18 @@ body {
     display: flex;/*coloca os elementos da página lado a lado*/
     align-items: center;/*alinha os elementos com base na imagem nesse caso*/
     justify-content: space-between;
+    gap: 82px; /*é o que faz manter o espaçamento entre o conteudo da section e a imagem conforme o página é aberta em uma tela pequena*/
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -64,14 +65,14 @@ body {
 }
 
 .apresentacao__paragrafo {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 40px 0 0 0;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
 }
 
 .sub-titulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
 }
@@ -91,12 +92,12 @@ body {
     gap: 16px;
     border: 2px solid var(--cor-terceiaria);
     color: var(--cor-secundaria);
-    width: 280px;
+    width: 50%;
     border-radius: 8px;
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
 }
@@ -107,6 +108,7 @@ body {
 }
 
 .img {
+    width: 50%;
     border-radius: 16px;
 }
 
@@ -116,6 +118,12 @@ body {
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
