@@ -125,5 +125,22 @@ body {
 @media (max-width: 1200px) {
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .menu {
+        padding: 10%;
+    }
+
+    .menu-navegacao {
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .botoes {
+        width: auto;
     }
 }
